@@ -96,30 +96,29 @@ $('.tab-menu button').each(function(i){
     })
 });
 // Slides //
-  $('.slides-wrapper').slick({
+  $('.about-image-slides').slick({
     arrows: true,
     dots: false,
     autoplay: false,
     speed: 300,
-    slidesToShow: 4,
-    prevArrow: '<span class="priv_arrow"><i class="fa-light fa-circle-arrow-right"></i></span>',
-      nextArrow: ' <span class="next_arrow"><i class="fa-light fa-circle-arrow-left"></i></span>',
+    slidesToShow: 1,
+    prevArrow: '<span class="priv_arrow"><i class="fa-light fa-arrow-left-long"></i></span>',
+    nextArrow: ' <span class="next_arrow"><i class="fa-light fa-arrow-right-long"></i></span>',
     responsive: [
       {
       breakpoint: 1199,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         infinite: true,
       }
       },
       {
       breakpoint: 991,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        dots: true,
-        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
       }
       },
       {
@@ -127,8 +126,7 @@ $('.tab-menu button').each(function(i){
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: true,
-        arrows: false,
+        arrows: true,
       }
       }
     ]

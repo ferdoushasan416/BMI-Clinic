@@ -582,7 +582,7 @@ Bmi Methode Css End
 .bmi-clinic-box p {
 	max-width: 368px;
 }
-.bmi-box-img {
+.clinic-app-img {
 	margin-top: 20px;
 	height: 400px;
 }
@@ -629,6 +629,12 @@ Bmi Clinic Css Start
 ============================
 */
 
+
+/*
+============================
+Prikpennen Tab Css Start
+============================
+*/
 .prikpennen-section {
 	background-size: cover;
 	background-position: center;
@@ -756,6 +762,187 @@ Bmi Clinic Css Start
 		font-size: 22px;
 	}
 }
+/*
+============================
+Prikpennen Tab Css End
+============================
+*/
+
+/*
+============================
+About Css Start
+============================
+*/
+.bmi-about-section {
+	position: relative;
+	z-index: 2;
+  }
+  .bmi-vector-shape {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+.about-img img {
+	border-radius: 24px;
+	width: 100%;
+	max-width: 490px;
+}
+.about-content a {
+	background: transparent;
+	border: 1px solid #1B2F4E26;
+	color: var(--black-color);
+	padding: 14px 28px;
+	margin-top: 40px;
+}
+@media only screen and (max-width:767px) {
+	.about-content {
+		margin-top: 32px;
+	}
+}
+.about-img-thumb {
+	margin-top: 32px;
+  }
+.about-img-thumb h4 {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 500;
+  }
+  .about-img-thumb h4 span {
+	display: block;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 300;
+  }
+  .about-content p {
+	max-width: 544px;
+}
+  .about-image-slides .slick-arrow {
+	position: absolute;
+	width: 58px;
+	height: 58px;
+	color: var(--black-color);
+	font-weight: 500;
+	border: 1px solid #E2E7EF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	bottom: -88px;
+	transition: 0.3s all ease;
+	left: 0;
+  }
+  .about-image-slides .slick-arrow:hover {
+	color: var(--white-color);
+	background-color: var(--theme-color);
+  }
+  .about-image-slides .next_arrow {
+	margin-left: 70px;
+  }
+  .about-inner {
+	display: grid;
+	column-gap: 80px;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+  }
+  .about-image-slides {
+	max-width: 494px;
+}
+.about-inner:not(:last-of-type) {
+	margin-bottom: 123px;
+}
+@media only screen and (max-width:991px) {
+	.about-inner {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+	.about-image-slides {
+		overflow: hidden;
+		max-width: 100%;
+		margin-top: 30px;
+		padding-bottom: 90px;
+	}
+	.about-content p {
+		max-width: 100%;
+	}
+	.about-content {
+		margin-top: 50px;
+	}
+	.about-image-slides {
+		max-width: 494px;
+		margin: 0 auto;
+		margin-top: 32px;
+	}
+	.about-image-slides .slick-arrow {
+		width: 50px;
+		height: 50px;
+		bottom: 8px;
+	}
+}
+@media only screen and (max-width:767px) {
+	.about-image-slides {
+		overflow: hidden;
+		max-width: 100%;
+		margin-top: 30px;
+		padding-bottom: 90px;
+	}
+	.about-inner:not(:last-of-type) {
+		margin-bottom: 0;
+	}
+}
+/*
+============================
+About Css End
+============================
+*/
+
+/*
+============================
+Bmi Prikpennen Css Start
+============================
+*/
+.bmi-prikpennen-section {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.bmi-prikpennen-box {
+	background: #FFFFFFF2;
+	border: 1px solid #E8EEF2;
+	box-shadow: 0px 1.85px 3.15px 0px #0744A103;
+	box-shadow: 0px 8.15px 6.52px 0px #0744A105;
+	box-shadow: 0px 20px 13px 0px #0744A106;
+	box-shadow: 0px 38.52px 25.48px 0px #0744A108;
+	box-shadow: 0px 64.81px 46.85px 0px #0744A10A;
+	box-shadow: 0px 100px 80px 0px #0744A10D;
+	padding: 65px 32px 34px 32px;
+	border-radius: 32px;
+	margin-top: 50px;
+}
+.bmi-prikpennen-box .medicine-content-wrap {
+	margin-top: 97px;
+}
+.bmi-prikpennen-box .medicine-content-wrap:before {
+	display: none;
+}
+.bmi-box-img {
+	text-align: center;
+}
+.bmi-prikpennen-box .sub_title,
+.bmi-prikpennen-box ul li span {
+	color: var(--theme-color);
+  }
+.bmi-prikpennen-box .site-btn {
+	width: 100%;
+	text-align: center;
+}
+/*
+============================
+Bmi Prikpennen Css End
+============================
+*/
+
+
 /*
 ============================
 Footer Css Start
