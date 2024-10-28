@@ -639,7 +639,9 @@ Bmi Clinic Css Start
   .prikpennen-section .section-title h2 {
 	max-width: 581px;
   }
-
+  .medicine-img img {
+	max-width: 584px;
+}
   .medicine-tab-wrapper {
 	margin-top: 38px;
 }
@@ -658,7 +660,7 @@ Bmi Clinic Css Start
 	border-radius: 40px;
 	margin: 3px;
 }
-.tab-menu .active {
+.tab-menu button:hover, .tab-menu button.active {
 	background: radial-gradient(203.58% 233.7% at 50% 233.7%, #D13B31 0%, #E66E4A 100%);
 	color: var(--white-color);
   }
@@ -668,7 +670,7 @@ Bmi Clinic Css Start
 .medicine-content-wrap::before {
 	content: "";
 	position: absolute;
-	left: -44px;
+	left: -50px;
 	top: 0;
 	width: 1px;
 	height: 100%;
@@ -724,9 +726,17 @@ Bmi Clinic Css Start
 .medicine-box-btn a {
 	padding: 14px 35px;
 }
+@media only screen and (max-width:1199px) {
+	.medicine-img img {
+		max-width: 400px;
+	}
+}
 @media only screen and (max-width:991px) {
 	.medicine-boxes-wrap {
 		grid-template-columns: 1fr 1fr;
+	}
+	.medicine-img img {
+		max-width: 100%;
 	}
 	.medicine-box-btn {
 		position: initial;
@@ -738,6 +748,9 @@ Bmi Clinic Css Start
 	}
 	.medicine-content-wrap::before {
 		display: none;
+	}
+	.tab-menu button {
+		padding: 6px 19px;
 	}
 	.medicine-content-wrap h4 {
 		font-size: 22px;

@@ -76,7 +76,25 @@ $(window).on('scroll', function () {
 	});
   
   })();
+//Tab function //
+$('.tab-menu button').eq(0).addClass('active') 
+$('.tab-box').hide()
+$('.tab-box').eq(0).show()
 
+$('.tab-menu button').each(function(i){
+    $(this).click(function(){
+        
+        if( $(this).hasClass('active') ) return false
+        
+        else{
+            $('.tab-menu button').removeClass('active')
+            $(this).addClass('active')
+            $('.tab-box').hide()
+            $('.tab-box').eq(i).show()
+            
+        } 
+    })
+});
 // Slides //
   $('.slides-wrapper').slick({
     arrows: true,
