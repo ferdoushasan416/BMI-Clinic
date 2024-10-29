@@ -788,7 +788,7 @@ About Css Start
 	width: 100%;
 	max-width: 490px;
 }
-.about-content a {
+.b-btn {
 	background: transparent;
 	border: 1px solid #1B2F4E26;
 	color: var(--black-color);
@@ -976,12 +976,13 @@ Bmi Bestelproces Css Start
 .bestelproces-box-wrap {
 	position: relative;
   }
-.bestelproces-box {
+  .bestelproces-box {
 	background: #FFFFFFB2;
 	border: 1px solid #E8EEF2;
 	backdrop-filter: blur(30px);
 	padding: 32px 32px 25px 32px;
-  }
+	border-radius: 32px;
+}
   .bestelproces-box h4 {
 	font-size: 24px;
 	font-weight: 400;
@@ -1046,6 +1047,9 @@ Bmi Bestelproces Css Start
 	margin-bottom: 16px;
   }
   @media only screen and (max-width:991px) {
+	.bestelproces-section {
+		padding-bottom: 50px;
+	}
 	.bestelproces-boxes-inline {
 		grid-template-columns: 1fr 1fr;
 	}
@@ -1082,6 +1086,115 @@ Bmi Bestelproces Css End
 ============================
 */
 
+/*
+============================
+Bmi Blog Css Start
+============================
+*/
+.bmi-blog-wrap {
+	margin-top: 40px;
+  }
+  .bmi-blog-img img {
+	border-radius: 24px;
+  }
+  .bmi-blog-wrap h3 {
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 40px;
+	margin-top: 24px;
+	max-width: 461px;
+	margin-bottom: 0;
+}
+.bmi-blog-wrap .date {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+	margin-top: 15px;
+	display: block;
+}
+.bmi-blog-btns {
+	margin-top: 17px;
+}
+.bmi-blog-btns .blog-btn {
+	font-size: 10px;
+	line-height: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--theme-color);
+	letter-spacing: 1px;
+	display: inline-block;
+	padding: 7px 16px;
+	border: 1px solid #CDDCF4;
+	border-radius: 40px;
+	transition: 0.3s all ease;
+  }
+.bmi-blog-btns .blog-btn:hover {
+	color: var(--white-color);
+	background-color: var(--theme-color);
+  }
+  .bmi-blog-wrap.blog-right {
+	display: flex;
+	column-gap: 24px;
+	align-items: center;
+	border-bottom: 1px solid #DDEAFE;
+	padding-bottom: 32px;
+  }
+  .bmi-blog-wrap.blog-right img {
+	max-width: 207px;
+  }
+  .bmi-blog-wrap.blog-right .bmi-blog-content h5 {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 28px;
+	max-width: 248px;
+  }
+  .blog-btn {
+	margin-top: -64px;
+}
+@media only screen and (max-width:1199px) {
+	.bmi-blog-btns a {
+		margin-bottom: 10px;
+	}
+	.blog-btn {
+		margin-top: -10px;
+	}
+}
+@media only screen and (max-width:991px) {
+	.bmi-blog-img img {
+		border-radius: 24px;
+		width: 100%;
+	}
+	.bmi-blog-wrap h3 {
+		font-size: 30px;
+		line-height: 38px;
+		max-width: 100%;
+	}
+	.bmi-blog-wrap.blog-right .bmi-blog-content h5 {
+		max-width: 400px;
+	}
+}
+@media only screen and (max-width:767px) {
+	.bmi-blog-wrap {
+		margin-top: 20px;
+	}
+	.bmi-blog-wrap h3 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.bmi-blog-wrap.blog-right {
+		display: block;
+		padding-bottom: 25px;
+	}
+	.bmi-blog-wrap.blog-right .bmi-blog-content h5 {
+		max-width: 100%;
+		margin-top: 20px;
+	}
+}
+/*
+============================
+Bmi Blog Css End
+============================
+*/
 
 
 
