@@ -932,15 +932,158 @@ Bmi Prikpennen Css Start
 .bmi-prikpennen-box ul li span {
 	color: var(--theme-color);
   }
-.bmi-prikpennen-box .site-btn {
+.bmi-box-btn .site-btn {
 	width: 100%;
 	text-align: center;
+}
+@media only screen and (max-width:1199px) {
+	.bmi-box-btn .site-btn {
+		font-size: 15px;
+		padding: 14px 30px;
+	}
+}
+@media only screen and (max-width:767px) {
+	.bmi-prikpennen-box {
+		margin-top: 32px;
+	}
+	.medicine-content-list ul li {
+		font-size: 15px;
+	}
+	.medicine-content-bottom span {
+		font-size: 15px;
+	}
 }
 /*
 ============================
 Bmi Prikpennen Css End
 ============================
 */
+
+/*
+============================
+Bmi Bestelproces Css Start
+============================
+*/
+.bestelproces-section {
+	border-bottom: 1px solid #DDEAFE;
+	padding-bottom: 65px;
+	position: relative;
+}
+.bmi-vector-shape.vector-left {
+	left: 0;
+	top: 160px;
+}
+.bestelproces-box-wrap {
+	position: relative;
+  }
+.bestelproces-box {
+	background: #FFFFFFB2;
+	border: 1px solid #E8EEF2;
+	backdrop-filter: blur(30px);
+	padding: 32px 32px 25px 32px;
+  }
+  .bestelproces-box h4 {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 32px;
+	display: flex;
+	align-items: center;
+}
+  .bestelproces-box h4 span {
+	width: 40px;
+	height: 40px;
+	background-color: #DDEAFE;
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	margin-right: 12px;
+	font-size: 16px;
+	font-weight: 500;
+  }
+  .list-box-img {
+	margin-top: 35px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+  }
+
+  .bestelproces-boxes-inline {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 24px;
+	row-gap: 24px;
+	margin-top: 40px;
+	position: relative;
+  }
+  .box-list-btn a {
+	color: #fff;
+	width: 72px;
+	height: 72px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	cursor: pointer;
+	left: -10px;
+	font-size: 24px;
+	background-image: url(assets/images/ellipse-bg-1.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.bestelproces-btn-wrap {
+	margin-top: 24px;
+}
+.bestelproces-btn-wrap p {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 300;
+	margin-bottom: 16px;
+  }
+  @media only screen and (max-width:991px) {
+	.bestelproces-boxes-inline {
+		grid-template-columns: 1fr 1fr;
+	}
+	.bestelproces-box h4 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.bestelproces-box-wrap.box-wrap-3 .box-list-btn {
+		display: none;
+	}
+	.box-list-btn a {
+		width: 50px;
+		height: 50px;
+		font-size: 16px;
+	}
+  }
+  @media only screen and (max-width:767px) {
+	.bestelproces-boxes-inline {
+		grid-template-columns: 1fr;
+	}
+	.box-list-btn a {
+		transform: translateX(-50%);
+		left: 50%;
+		z-index: 2;
+		top: -35px;
+	}
+	.bestelproces-box-wrap.box-wrap-3 .box-list-btn {
+		display: block;
+	}
+  }
+/*
+============================
+Bmi Bestelproces Css End
+============================
+*/
+
+
+
 
 
 /*
